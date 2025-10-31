@@ -1,0 +1,23 @@
+intro: |
+  To create `without_fill_form`, remove anything related to 'fill_form' from `with_fill_form`.
+  Keep both sections in sync.
+
+with_fill_form: |
+  - 'command_type':
+    - One of ['navigate', 'fill_form', 'none'].
+    - If User Command is navigation or mentions Menu Structure (include a menu name or a menu title), use 'navigate'.
+    - If the input contains any field title in Field Form Structure, use 'fill_form'.
+    - Otherwise, use 'none'.
+  - 'value':
+    - If 'command_type' is 'navigate', value is a menu name in Menu Structure, which must be in small caps and 1 word without whitespace.
+    - If 'command_type' is 'fill_form', value is an object with key-value pairs (field name and its value).
+    - If 'command_type' is 'none', value is an empty string.
+
+without_fill_form: |
+  - 'command_type':
+    - One of ['navigate', 'none'].
+    - If User Command is navigation or mentions Menu Structure (include a menu name or a menu title), use 'navigate'.
+    - Otherwise, use 'none'.
+  - 'value':
+    - If 'command_type' is 'navigate', value is a menu name in Menu Structure, which must be in small caps and 1 word without whitespace.
+    - If 'command_type' is 'none', value is an empty string.

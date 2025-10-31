@@ -1,0 +1,17 @@
+intro: |
+  The `with_field_form` version contains the field form structure: fill_form_content
+  In the `without_field_form` version, that line must be removed.
+  Keep the rest of the content identical.
+
+with_field_form: |
+  User Command: {user_prompt}
+  Menu Structure consists of menu name and menu title: {menu_content}
+  Field Form Structure consists of field name and field title: {fill_form_content}
+  Convert User Command into structured JSON Command with format: {json_command_format}
+  {json_guideline}
+
+without_field_form: |
+  User Command: {user_prompt}
+  Menu Structure consists of menu name and menu title: {menu_content}
+  Convert User Command into structured JSON Command with format: {json_command_format}
+  {json_guideline}

@@ -1,0 +1,4 @@
+{
+  "command_type": "string. required.",
+  "value": "string or object. required."
+}

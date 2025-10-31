@@ -1,0 +1,16 @@
+{
+  "contact": {
+    "fields": [
+      { "name": "Name" },
+      { "email": "Email" },
+      { "message": "Message" },
+      { "submit": "Submit" }
+    ],
+    "guidelines": {
+      "name": "string, free text.",
+      "email": "email type. convert it when needed.",
+      "message": "string, free text.",
+      "submit": "\"submit\""
+    }
+  }
+}

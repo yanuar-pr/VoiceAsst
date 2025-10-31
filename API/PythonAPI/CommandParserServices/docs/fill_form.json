@@ -1,0 +1,8 @@
+{
+  "contact": [
+    { "name": "Name" },
+    { "email": "Email" },
+    { "message": "Message" },
+    { "submit": "Submit" }
+  ]
+}

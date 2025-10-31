@@ -1,0 +1,20 @@
+intro: |
+  The `with_field_form` version contains the field form structure: fields_content, guidelines_content. command_type: fill_form
+  In the `without_field_form` version, that line and fill_form must be removed.
+  Keep the rest of the content identical.
+
+with_field_form: |
+  Menu Structure consists of menu name and menu title: {menu_content}
+  Field Form Structure consists of field name and field title: {fields_content}\n- Split the User Command by field title in the Field Form Structure.\n- A field value = all text that comes after field title, or return empty string '' if no text found.
+  Field guidelines: {guidelines_content}
+  JSON Command format: {json_command_format}
+  JSON Command guidelines: {json_guideline}
+
+without_field_form: |
+  Menu Structure consists of menu name and menu title: {menu_content}
+  JSON Command format: {json_command_format}
+  JSON Command guidelines: {json_guideline}
+
+user_prompt: |
+  User Command: {user_prompt}
+  Convert User Command into structured JSON Command
